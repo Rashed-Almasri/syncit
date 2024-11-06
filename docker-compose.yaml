@@ -1,0 +1,55 @@
+version: '3.8'
+
+services:
+  front-end:
+    build: ./syncit-frontend
+    ports:
+      - "3000:3000"
+    networks:
+      - app-network
+
+  mysql_db:
+    build: ./mysql
+    environment:
+      MYSQL_ROOT_PASSWORD: toor
+      MYSQL_DATABASE: syncit
+    volumes:
+      - mysql_data:/var/lib/mysql
+    ports:
+      - "3306:3306"
+    networks:
+      - app-network
+
+  syncback: 
+    build: ./syncit
+    ports:
+      - "8011:8011"
+    depends_on:
+      - mysql_db
+    environment:
+      SPRING_DATASOURCE_URL: jdbc:mysql://mysql_db:3306/syncit?useSSL=false&serverTimezone=UTC&allowPublicKeyRetrieval=true&autoReconnect=true
+    networks:
+      - app-network
+    privileged: true
+    
+  coderunner:
+    build: ./coderunner 
+    volumes:
+      - /var/run/docker.sock:/var/run/docker.sock
+      - coderunner_docker_data:/var/lib/docker
+      - /temp:/code 
+    restart: on-failure
+    privileged: true
+    networks:
+      - app-network
+    ports:
+      - "8081:8081"
+    
+volumes:
+  mysql_data:
+  coderunner_docker_data:
+  /temp:
+networks:
+  app-network:
+    driver: bridge
+

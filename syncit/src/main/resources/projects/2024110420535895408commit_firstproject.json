@@ -1,0 +1,10 @@
+{
+  "firstproject" : {
+    "main.py" : 6,
+    "folder1" : {
+      "main.cpp" : 7,
+      "folder2" : { }
+    },
+    "main.java" : 9
+  }
+}

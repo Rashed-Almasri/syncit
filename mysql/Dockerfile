@@ -1,0 +1,8 @@
+FROM mysql:latest
+
+ENV MYSQL_ROOT_PASSWORD=toor
+ENV MYSQL_DATABASE=syncit
+
+EXPOSE 3306
+
+CMD ["mysqld"]

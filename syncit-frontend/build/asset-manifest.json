@@ -1,0 +1,24 @@
+{
+  "files": {
+    "main.css": "/static/css/main.9e296915.css",
+    "main.js": "/static/js/main.03da5e8f.js",
+    "static/js/453.352a9cd8.chunk.js": "/static/js/453.352a9cd8.chunk.js",
+    "static/media/syncit.jpeg": "/static/media/syncit.931424af03769803ee1b.jpeg",
+    "static/media/json.svg": "/static/media/json.a3a8f21304bc0543e826e219c436955f.svg",
+    "static/media/java.svg": "/static/media/java.38de31869a5a34c44a779c241f671a9a.svg",
+    "static/media/cpp.svg": "/static/media/cpp.175289e551032d1bc2fd840a8da48466.svg",
+    "static/media/python-icon.svg": "/static/media/python-icon.b7dca7431ec705868eb4af0c7a3af670.svg",
+    "static/media/js.svg": "/static/media/js.90384b2de06d28553533ed9bb6d606bf.svg",
+    "static/media/html.svg": "/static/media/html.6b6f52e770d91259d3a93d7438a09d7c.svg",
+    "static/media/css.svg": "/static/media/css.74d7bcc15b667f1b98e7c0170080357e.svg",
+    "index.html": "/index.html",
+    "static/media/txt2.svg": "/static/media/txt2.3bc0420de9f6b8d912a00fb14dbfc386.svg",
+    "main.9e296915.css.map": "/static/css/main.9e296915.css.map",
+    "main.03da5e8f.js.map": "/static/js/main.03da5e8f.js.map",
+    "453.352a9cd8.chunk.js.map": "/static/js/453.352a9cd8.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.9e296915.css",
+    "static/js/main.03da5e8f.js"
+  ]
+}
