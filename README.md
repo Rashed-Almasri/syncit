@@ -1,0 +1,2 @@
+# syncit
+Collaborative code editor
